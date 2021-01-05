@@ -1135,3 +1135,17 @@ def calc_normvar(img2d):
     normvar = b / (height * width * mean)
 
     return normvar
+
+def find_chan(metadata,channel):
+    """Find channel index number based on filter name
+
+    :param metadata: czi metadata
+    :type metadata:  dict
+    :param: channel: channel name
+    :type channel: str
+    :rtype: int
+    """
+    for i, dic in enumerate(metadata['Channels']):
+        if dic == channel:
+            return i
+    return -1
