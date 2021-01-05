@@ -1136,6 +1136,8 @@ def calc_normvar(img2d):
 
     return normvar
 
+
+
 def find_chan(metadata,channel):
     """Find channel index number based on filter name
 
