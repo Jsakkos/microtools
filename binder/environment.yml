@@ -1,0 +1,12 @@
+channels:
+  - conda-forge
+  - ome
+dependencies:
+  - pip
+  # ome: minimal dependencies required to use the Python API
+  - omero-py
+  - pip:
+    - ome-zarr
+    - dask-image
+    - stardist
+    - tensorflow
